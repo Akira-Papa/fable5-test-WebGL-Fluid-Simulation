@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>株式会社フラックス | 知性は、流体である。</title>
+<meta name="description" content="株式会社フラックス(FLUX Intelligence K.K.)は、「流れつづける知性」を研究開発するAI企業です。基盤モデル FLUX-Ω、世界モデル、自律エージェントの研究開発を行っています。">
+<meta property="og:title" content="株式会社フラックス | 知性は、流体である。">
+<meta property="og:description" content="流れつづける知性を、社会へ。汎用人工知能の研究開発を行う株式会社フラックスの公式サイトです。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f7f5f0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%23b3361e'/><text x='50' y='72' font-size='62' font-family='serif' fill='%23f7f5f0' text-anchor='middle'>流</text></svg>">
+</head>
+<body>
+
+<!-- ===== 背景: 墨流し ===== -->
+<canvas id="fluid" aria-hidden="true"></canvas>
+<div class="veil" id="veil" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="logo">
+    <span class="logo-seal" aria-hidden="true">流</span>
+    <span class="logo-text">FLUX<small>株式会社フラックス</small></span>
+  </a>
+  <nav class="site-nav" id="siteNav" aria-label="メイン">
+    <a href="#philosophy">思想<small>Philosophy</small></a>
+    <a href="#products">プロダクト<small>Products</small></a>
+    <a href="#research">研究開発<small>Research</small></a>
+    <a href="#news">ニュース<small>News</small></a>
+    <a href="#company">会社概要<small>Company</small></a>
+    <a href="#contact" class="nav-contact">お問い合わせ</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false">
+    <span></span><span></span><span class="nav-toggle-label">MENU</span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero">
+    <div class="container">
+      <a class="hero-news boot boot-1" href="#news">
+        <span class="hero-news-tag">NEWS</span>
+        <time>2026.06.02</time>
+        <span class="hero-news-title">シリーズCラウンドで420億円の資金調達を完了しました</span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <p class="hero-en boot boot-2"><em>Intelligence in Motion</em></p>
+      <h1 class="hero-title boot boot-2">知性は、<br class="sp-only">流体である。</h1>
+      <p class="hero-lead boot boot-3">
+        私たちは、答えを保存しません。流れを設計します。<br>
+        株式会社フラックスは、推論のさなかにも学びつづけ、<br class="pc-only">
+        水のように形を変える「流体知性」を研究開発するAI企業です。
+      </p>
+      <div class="hero-actions boot boot-4">
+        <a href="#products" class="btn btn-primary">プロダクトを見る</a>
+        <a href="#philosophy" class="btn btn-line">私たちの思想 <span class="arrow">&rarr;</span></a>
+      </div>
+      <ul class="hero-meta boot boot-4">
+        <li><span>設立</span>20XX年</li>
+        <li><span>調達総額</span>542億円</li>
+        <li><span>提供中</span>FLUX-&Omega; 4</li>
+      </ul>
+    </div>
+    <p class="hero-tate boot boot-5" aria-hidden="true">墨流しに学ぶ、知性のかたち</p>
+    <a href="#philosophy" class="scroll-cue boot boot-5">SCROLL<span class="scroll-line"></span></a>
+  </section>
+
+  <!-- ===== 01 思想 ===== -->
+  <section class="section" id="philosophy">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">思想<span class="sec-en"><em>Philosophy</em></span></h2>
+      </div>
+      <div class="two-col">
+        <div class="col-left">
+          <p class="statement reveal">固定された答えより、<br>流れつづける<mark>問い</mark>を。</p>
+        </div>
+        <div class="col-right">
+          <p class="reveal" style="--d:.08s">古来、墨流しの職人は水面に墨を浮かべ、風と呼吸だけで二度とない紋様を生み出してきました。かたちを決めるのではなく、流れを整える——私たちのAI研究は、この思想から出発しています。</p>
+          <p class="reveal" style="--d:.16s">フラックスのモデル群は、推論のさなかにも学習を続け、変化する環境に対して液体のように形を変えます。東京・サンフランシスコ・ロンドンの研究チームが「動きつづける知性」の数理を探求し、その成果は論文で終わらせず、すべてプロダクトとして社会へ届けます。</p>
+          <a href="#research" class="text-link reveal" style="--d:.24s">研究開発の取り組み <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+      <dl class="stats reveal">
+        <div class="stat">
+          <dt>基盤モデル パラメータ数</dt>
+          <dd><span class="stat-num" data-target="675">0</span><span class="stat-unit">B</span></dd>
+        </div>
+        <div class="stat">
+          <dt>査読付き論文(2025年度)</dt>
+          <dd><span class="stat-num" data-target="47">0</span><span class="stat-unit">本</span></dd>
+        </div>
+        <div class="stat">
+          <dt>API稼働率</dt>
+          <dd><span class="stat-num" data-target="99.99" data-decimals="2">0</span><span class="stat-unit">%</span></dd>
+        </div>
+        <div class="stat">
+          <dt>研究拠点</dt>
+          <dd><span class="stat-num" data-target="3">0</span><span class="stat-unit">都市</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===== 02 プロダクト ===== -->
+  <section class="section section-tint" id="products">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">プロダクト<span class="sec-en"><em>Products</em></span></h2>
+      </div>
+      <p class="sec-lede reveal">研究のための研究はしない。<br class="sp-only">すべてのモデルは、現実を動かすために。</p>
+
+      <div class="products">
+        <article class="product reveal" style="--d:0s">
+          <div class="product-head">
+            <span class="product-tag">基盤モデル</span>
+            <span class="product-num">Ω-04</span>
+          </div>
+          <h3 class="product-name">FLUX-&Omega;&nbsp;4</h3>
+          <p class="product-desc">思考の深さと応答の速度を両立するフラッグシップ。高度な推論からコード生成、長文の執筆まで、知的労働の中枢を担います。</p>
+          <ul class="product-spec">
+            <li>675Bパラメータ(MoE)</li>
+            <li>100万トークン文脈長</li>
+          </ul>
+          <span class="text-link">詳しく見る <span class="arrow">&rarr;</span></span>
+        </article>
+
+        <article class="product reveal" style="--d:.07s">
+          <div class="product-head">
+            <span class="product-tag">世界モデル</span>
+            <span class="product-num">V-02</span>
+          </div>
+          <h3 class="product-name">FLUX VISION</h3>
+          <p class="product-desc">映像・3D・物理法則を理解し、次の瞬間を予測する視覚知性。ロボティクスや自動運転の「眼」と「直感」になります。</p>
+          <ul class="product-spec">
+            <li>リアルタイム120fps推論</li>
+            <li>物理シミュレーション統合</li>
+          </ul>
+          <span class="text-link">詳しく見る <span class="arrow">&rarr;</span></span>
+        </article>
+
+        <article class="product reveal" style="--d:.14s">
+          <div class="product-head">
+            <span class="product-tag">エージェント</span>
+            <span class="product-num">A-03</span>
+          </div>
+          <h3 class="product-name">FLUX AGENT</h3>
+          <p class="product-desc">計画・実行・検証のループを自律で回しつづける業務エージェント基盤。24時間、人の隣で働き、組織の流量を増やします。</p>
+          <ul class="product-spec">
+            <li>マルチエージェント協調</li>
+            <li>SOC 2 Type II 準拠</li>
+          </ul>
+          <span class="text-link">詳しく見る <span class="arrow">&rarr;</span></span>
+        </article>
+
+        <article class="product reveal" style="--d:.21s">
+          <div class="product-head">
+            <span class="product-tag">オンデバイス</span>
+            <span class="product-num">E-01</span>
+          </div>
+          <h3 class="product-name">FLUX EDGE</h3>
+          <p class="product-desc">3Bパラメータをポケットの中に。ネットワークの外でも思考は止まらず、データは端末から出ません。</p>
+          <ul class="product-spec">
+            <li>主要NPU最適化済み</li>
+            <li>完全オフライン動作</li>
+          </ul>
+          <span class="text-link">詳しく見る <span class="arrow">&rarr;</span></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 03 研究開発 ===== -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">研究開発<span class="sec-en"><em>Research</em></span></h2>
+      </div>
+      <div class="two-col">
+        <div class="col-left">
+          <p class="statement reveal">答えを保存するな。<br>流れを設計せよ。</p>
+          <p class="statement-note reveal" style="--d:.1s">— フラックス研究原則 第一条</p>
+          <a href="#" class="text-link reveal" style="--d:.18s">論文一覧へ <span class="arrow">&rarr;</span></a>
+        </div>
+        <ol class="papers col-right">
+          <li class="paper reveal" style="--d:0s">
+            <time>2026.05</time>
+            <div>
+              <h3>Liquid Attention: 動的に再配線されるアテンション機構</h3>
+              <p>NeurIPS 2026(査読中)</p>
+            </div>
+          </li>
+          <li class="paper reveal" style="--d:.06s">
+            <time>2026.03</time>
+            <div>
+              <h3>&Omega;-MoE: 675Bパラメータ規模の安定訓練レシピ</h3>
+              <p>ICML 2026</p>
+            </div>
+          </li>
+          <li class="paper reveal" style="--d:.12s">
+            <time>2026.01</time>
+            <div>
+              <h3>World Currents: 流体力学に基づく世界モデル</h3>
+              <p>ICLR 2026(口頭発表)</p>
+            </div>
+          </li>
+          <li class="paper reveal" style="--d:.18s">
+            <time>2025.11</time>
+            <div>
+              <h3>Continual RLHF: 推論時に学習しつづける整合化手法</h3>
+              <p>NeurIPS 2025</p>
+            </div>
+          </li>
+          <li class="paper reveal" style="--d:.24s">
+            <time>2025.08</time>
+            <div>
+              <h3>SplatFormer: 物理シミュレーション統合型Transformer</h3>
+              <p>SIGGRAPH Asia 2025</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 04 ニュース ===== -->
+  <section class="section section-tint" id="news">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">ニュース<span class="sec-en"><em>News</em></span></h2>
+      </div>
+      <ul class="news-list">
+        <li class="reveal" style="--d:0s">
+          <a href="#" class="news-row">
+            <time>2026.06.02</time>
+            <span class="news-tag is-press">プレスリリース</span>
+            <h3>シリーズCラウンドで420億円の資金調達を完了</h3>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:.06s">
+          <a href="#" class="news-row">
+            <time>2026.05.20</time>
+            <span class="news-tag">プロダクト</span>
+            <h3>FLUX-&Omega; 4 API、一般提供を開始</h3>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:.12s">
+          <a href="#" class="news-row">
+            <time>2026.04.11</time>
+            <span class="news-tag">研究</span>
+            <h3>ICLR 2026にて「World Currents」が口頭発表に採択</h3>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:.18s">
+          <a href="#" class="news-row">
+            <time>2026.03.28</time>
+            <span class="news-tag">コーポレート</span>
+            <h3>ロンドンに3つ目の研究拠点を開設</h3>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+      <div class="more-link reveal">
+        <a href="#" class="text-link">ニュース一覧へ <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 05 会社概要 ===== -->
+  <section class="section" id="company">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">会社概要<span class="sec-en"><em>Company</em></span></h2>
+      </div>
+      <div class="two-col">
+        <div class="col-left">
+          <p class="statement reveal">流れつづける知性を、<br>社会へ。</p>
+        </div>
+        <dl class="company-table col-right reveal" style="--d:.1s">
+          <div><dt>社名</dt><dd>株式会社フラックス(FLUX Intelligence K.K.)<br><small>※本サイトはデザインサンプルです。以下はすべてダミーデータです。</small></dd></div>
+          <div><dt>設立</dt><dd>20XX年XX月XX日</dd></div>
+          <div><dt>代表取締役</dt><dd>XXXX XXXX</dd></div>
+          <div><dt>資本金</dt><dd>XXX,XXX千円</dd></div>
+          <div><dt>所在地</dt><dd>〒XXX-XXXX 東京都XX区XXX X丁目X番X号<br>XXXXビル XX階</dd></div>
+          <div><dt>事業内容</dt><dd>汎用人工知能の研究開発、基盤モデルのライセンス提供、エンタープライズ向けAIソリューション</dd></div>
+          <div><dt>拠点</dt><dd>東京 / XXXX / XXXX</dd></div>
+          <div><dt>従業員数</dt><dd>XXX名(20XX年XX月現在)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お問い合わせ ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <p class="cta-en reveal"><em>Join the Flow</em></p>
+      <h2 class="cta-title reveal" style="--d:.08s">私たちと、<br class="sp-only">次の流れを。</h2>
+      <p class="cta-sub reveal" style="--d:.16s">採用・API利用・研究提携など、あらゆるご相談を歓迎します。</p>
+      <div class="cta-actions reveal" style="--d:.24s">
+        <a href="mailto:hello@flux.example" class="btn btn-primary" id="ctaBtn">お問い合わせはこちら</a>
+        <a href="#" class="btn btn-line">採用情報を見る <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== フッター ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <p class="foot-logo"><span class="logo-seal">流</span>FLUX</p>
+        <p class="foot-addr">株式会社フラックス<br>〒XXX-XXXX 東京都XX区XXX X丁目X番X号<br>XXXXビル XX階</p>
+      </div>
+      <nav class="foot-col" aria-label="企業情報">
+        <h4>企業情報</h4>
+        <a href="#philosophy">思想</a>
+        <a href="#company">会社概要</a>
+        <a href="#news">ニュース</a>
+        <a href="#">採用情報</a>
+      </nav>
+      <nav class="foot-col" aria-label="プロダクト">
+        <h4>プロダクト</h4>
+        <a href="#products">FLUX-&Omega; 4</a>
+        <a href="#products">FLUX VISION</a>
+        <a href="#products">FLUX AGENT</a>
+        <a href="#products">FLUX EDGE</a>
+      </nav>
+      <nav class="foot-col" aria-label="リソース">
+        <h4>リソース</h4>
+        <a href="#research">論文</a>
+        <a href="#">開発者ドキュメント</a>
+        <a href="#">API ステータス</a>
+      </nav>
+    </div>
+    <div class="foot-base">
+      <ul class="foot-legal">
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">サイトポリシー</a></li>
+        <li><a href="#">特定商取引法に基づく表記</a></li>
+      </ul>
+      <p class="foot-copy">&copy; <span id="year">2026</span> FLUX Intelligence K.K.<br>
+      <small>背景の墨流し: <a href="https://github.com/PavelDoGreat/WebGL-Fluid-Simulation">WebGL Fluid Simulation</a> by Pavel Dobryakov（MITライセンス）を改変して使用</small></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ページトップへ戻る -->
+<button class="pagetop" id="pagetop" aria-label="ページの先頭へ戻る">
+  <span aria-hidden="true">&uarr;</span>
+</button>
+
+<script src="js/fluid.js?v=5"></script>
+<script src="js/main.js?v=5"></script>
+</body>
+</html>
